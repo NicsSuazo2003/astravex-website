@@ -35,10 +35,10 @@ export function Contact() {
           className="rounded-2xl border border-border bg-card p-6 md:p-8 shadow-card"
         >
           <div className="grid sm:grid-cols-2 gap-4">
-            <Field label="Name" id="name" placeholder="Jane Cooper" />
-            <Field label="Email" id="email" type="email" placeholder="jane@company.com" />
+            <Field label="Name" id="name" placeholder="Charles Owen Penaverde" />
+            <Field label="Email" id="email" type="email" placeholder="owen@mail.com" />
           </div>
-          <Field label="Company" id="company" placeholder="Acme Health" className="mt-4" />
+          <Field label="Company" id="company" placeholder="Owen Solutions" className="mt-4" />
           <div className="mt-4">
             <label htmlFor="message" className="text-sm font-medium text-foreground">Message</label>
             <textarea
