@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AstraVex</title>
+  <script>
+    (function () {
+      var basepath = '/astravex-website';
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+
+      if (redirect && redirect !== location.href) {
+        // We came back from the redirect – restore the real path
+        history.replaceState(null, null, redirect);
+      } else {
+        // First visit – save the full URL and redirect to the app
+        sessionStorage.redirect = location.href;
+        location.replace(basepath + '/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Fallback if JS is off -->
+  <p>Redirecting to <a href="/astravex-website/">AstraVex</a>...</p>
+</body>
+</html>
